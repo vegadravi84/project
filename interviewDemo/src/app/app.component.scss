@@ -1,0 +1,61 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; 
+  }
+}
+
+.table-section {
+  flex: 1;
+  padding: 1rem;
+  box-sizing: border-box;
+  max-width: 100%; 
+}
+
+@media (min-width: 768px) {
+  .table-section {
+    max-width: 50%; 
+  }
+}
+
+.chart-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.chart-section ngx-charts-bar-vertical,
+.chart-section ngx-charts-line-chart {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.p-field {
+  margin-bottom: 1rem; 
+}
+
+label {
+  display: block; 
+  margin-bottom: 0.5rem; 
+}
+
+input,
+p-dropdown {
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.small {
+  color: red;
+} 
+
